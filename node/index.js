@@ -1,11 +1,14 @@
-const Logger = require('./logger.ts');
-const logger = new Logger();
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
 
-logger.on('message', data => console.log(data));
-logger.log('Howdiiiiiie!');
+const server = http.createServer((req,res)=>{
+if(req.url==='/')
+    res.end('<h1>HOME</h1>');
 
+}
+);
 
+const PORT = process.env.PORT || 5000;
 
-/* const Person = require('./person');
-const p = new Person('Jacke', 24);
-p.greeting(); */
+server.listen(PORT, () =>console.log(`server running on port ${PORT}` ));
