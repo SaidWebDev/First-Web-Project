@@ -12,3 +12,9 @@ fs.writeFile(path.join(__dirname, '/myfolder', 'myfile.txt'), 'Hey there!', err 
     if (err) throw err
     console.log('The file was successfully created !')
 })
+
+fs.readFile(path.join(__dirname, '/myfolder', 'myfile.txt'), '', (err,data) =>{
+if (err) throw err
+console.log('the content is: ' + data);
+}
+)
