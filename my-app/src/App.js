@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
-
+import Person from './Person/Person';
 export class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
          <h1> This is my react app!</h1>
+         <p>This is really working </p>
+         <Person></Person>
+         <Person></Person>
+         <Person></Person>
       </div>
 
 
