@@ -6,9 +6,9 @@ export class App extends Component {
       <div className="App">
          <h1> This is my react app!</h1>
          <p>This is really working </p>
-         <Person></Person>
-         <Person></Person>
-         <Person></Person>
+         <Person name="Said" age="30" ></Person>
+         <Person name="Amir" age="20"> I like playing soccer</Person>
+         <Person name="Wafae" age="28"></Person>
       </div>
 
 
